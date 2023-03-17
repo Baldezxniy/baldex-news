@@ -1,0 +1,61 @@
+{
+  "name": "prod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "dependencies": {
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "tslint": "^6.1.3"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "author": "Miroslav Kosiuk <miroslavkosuk@gmail.com>",
+  "license": "ISC",
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.20.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.8.3",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@statoscope/webpack-plugin": "^5.25.1",
+    "@types/croppie": "^2.6.1",
+    "@types/hast": "^2.3.4",
+    "@types/node": "^18.15.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@webpack-cli/serve": "^2.0.1",
+    "babel-loader": "^9.1.2",
+    "buffer": "^6.0.3",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "dotenv": "^16.0.3",
+    "git-revision-webpack-plugin": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.4",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "postcss-loader": "^7.1.0",
+    "postcss-modules": "^6.0.0",
+    "react": "^18.2.0",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.0",
+    "telegraph-node": "^1.0.4",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.2",
+    "webpack-dev-server": "^4.12.0"
+  }
+}
