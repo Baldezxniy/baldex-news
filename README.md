@@ -1,7 +1,7 @@
 
 # Bladex Web news
 
-setup
+## setup
 
 ```
 mv .env.example .env
